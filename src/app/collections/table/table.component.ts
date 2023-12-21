@@ -10,6 +10,7 @@ import {
   styleUrls: ['./table.component.css'],
 })
 export class TableComponent {
+  @Input() classNames: string = '';
   @Input() data: Person[] = [];
   @Input() headers: Headers[] = [];
 }
