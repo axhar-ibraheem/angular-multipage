@@ -1,1 +1,12 @@
-<p>modal works!</p>
+<div (click)="onCloseHandler()" class="ui dimmer visible active">
+  <div (click)="$event.stopPropagation()" class="ui modal visible active">
+    <i class="close icon" (click)="onCloseHandler()"> </i>
+    <div class="header">Modal!</div>
+    <div class="content">
+      <p>hello to the modal</p>
+    </div>
+    <div class="actions">
+      <button (click)="onCloseHandler()" class="ui button">OK</button>
+    </div>
+  </div>
+</div>

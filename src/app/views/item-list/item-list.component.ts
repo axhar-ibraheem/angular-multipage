@@ -8,4 +8,13 @@ import { Items } from '../views-home/views-home-component.component';
 })
 export class ItemListComponent {
   @Input() itemList: Items[] = [];
+
+  constructor() {
+    console.log(this.itemList);
+  }
+
+  // when the components mounts after that ngOnInit() is called.
+  ngOnInit() {
+    console.log(this.itemList);
+  }
 }

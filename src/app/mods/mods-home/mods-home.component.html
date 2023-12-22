@@ -1,2 +1,3 @@
-<p>mods-home works!</p>
-<app-modal></app-modal>
+<app-divider> Modal Component</app-divider>
+<button class="positive ui button" (click)="onToggle()">Show Modal</button>
+<app-modal *ngIf="showModal" (close)="onToggle()"></app-modal>
